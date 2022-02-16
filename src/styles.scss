@@ -1,0 +1,35 @@
+.app {
+  width: 100%;
+  .slide {
+    &-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    &-info {
+      text-align: center;
+      visibility: hidden;
+    }
+  }
+
+  .slideshow-slide {
+    &.active {
+      .slide-img {
+        width: 300px;
+        height: 300px;
+      }
+      .slide-info {
+        visibility: inherit;
+      }
+    }
+
+    &.next,
+    &.prev {
+      .slide-img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
